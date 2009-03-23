@@ -1,5 +1,4 @@
-category: _obsolete
-requires: libmad0
+category: Audio
 sdesc: "MPEG audio decoder library (source)"
 ldesc: "MAD (libmad) is a high-quality MPEG audio decoder. It currently 
 supports MPEG-1 and the MPEG-2 extension to Lower Sampling Frequencies, 

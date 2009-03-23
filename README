@@ -6,17 +6,18 @@ as the so-called MPEG 2.5 format. All three audio layers (Layer I, Layer
 II, and Layer III a.k.a. MP3) are fully implemented.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
 
 Build requirements:
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20080523-1
-  cygport-0.3.11-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.2-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-1
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -37,7 +38,6 @@ Build instructions:
 
 This will create:
   /usr/src/libmad-0.15.1b-X-src.tar.bz2
-  /usr/src/libmad-0.15.1b-X.tar.bz2
   /usr/src/libmad-devel-0.15.1b-X.tar.bz2
   /usr/src/libmad0-0.15.1b-X.tar.bz2
 
@@ -47,12 +47,11 @@ Files included in the binary packages:
 
 (libmad0)
   /usr/bin/cygmad-0.dll
-  /usr/share/doc/libmad-0.15.1b/CHANGES
-  /usr/share/doc/libmad-0.15.1b/COPYING
-  /usr/share/doc/libmad-0.15.1b/CREDITS
-  /usr/share/doc/libmad-0.15.1b/INSTALL
-  /usr/share/doc/libmad-0.15.1b/README
-  /usr/share/doc/libmad-0.15.1b/TODO
+  /usr/share/doc/libmad/CHANGES
+  /usr/share/doc/libmad/COPYING
+  /usr/share/doc/libmad/CREDITS
+  /usr/share/doc/libmad/README
+  /usr/share/doc/libmad/TODO
 
 (libmad-devel)
   /usr/include/mad.h
@@ -65,17 +64,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.15.1b-4 -----
-Separated library and libdevel packages.
-
------ version 0.15.1b-3 -----
-Rebuilt with cygport.  pkg-config file included.
-
------ version 0.15.1b-2 -----
-Rebuilt with current toolchain.
-
------ version 0.15.1b-1 -----
-Initial release for Cygwin.
+----- version 0.15.1b-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
