@@ -1,0 +1,24 @@
+NAME="libmad"
+VERSION=0.15.1b
+RELEASE=10
+CATEGORY="Libs"
+SUMMARY="MPEG audio decoder library"
+DESCRIPTION="MAD (libmad) is a high-quality MPEG audio decoder. It currently
+supports MPEG-1 and the MPEG-2 extension to Lower Sampling Frequencies, as
+well as the so-called MPEG 2.5 format. All three audio layers (Layer I,
+Layer II, and Layer III a.k.a. MP3) are fully implemented."
+HOMEPAGE="http://www.underbit.com/products/mad/"
+SRC_URI="mirror://sourceforge/mad/libmad-${VERSION}.tar.gz"
+PATCH_URI="mirror://portage/media-libs/libmad/files/libmad-0.15.1b-cflags.patch
+           mirror://portage/media-libs/libmad/files/libmad-0.15.1b-cflags-O2.patch
+           0.15.1b-no-undefined.patch
+           0.15.1b-pkgconfig.patch"
+
+PKG_NAMES="libmad0 libmad-devel"
+libmad0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
+libmad_devel_CONTENTS='usr/include/ usr/lib/'
+
+DISTCLEANFILES="mad.pc.in"
+
+CYGCONF_ARGS="--enable-accuracy"
+CYGCONF_ARGS+=" --enable-fpm=${ARCH_x86_64+64bit}${ARCH_i686+intel}"
