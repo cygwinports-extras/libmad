@@ -1,6 +1,6 @@
 NAME="libmad"
 VERSION=0.15.1b
-RELEASE=10
+RELEASE=11
 CATEGORY="Libs"
 SUMMARY="MPEG audio decoder library"
 DESCRIPTION="MAD (libmad) is a high-quality MPEG audio decoder. It currently
